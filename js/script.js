@@ -30,15 +30,21 @@ function saveNewProject() {
  
   // Create a new project object
 
-  console.log(newTitle);
-  console.log(newDescription);
-  console.log(newImage);
+  // console.log(newTitle);
+  // console.log(newDescription);
+  // console.log(newImage);
  
+  let newObject = {
+    "title": newTitle,
+    "desc": newDescription,
+    "image": newImage
+
+  }
 
 
  
   // Add the new project object to the projects array 
-  projects.push(saveNewProject);
+  projects.push(newObject);
 
  
 
