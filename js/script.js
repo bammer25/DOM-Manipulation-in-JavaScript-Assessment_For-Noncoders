@@ -7,8 +7,8 @@ function loadProjects() {
    for(var i=0; i<projects.length; i++){
     var individualElement = `
     <div class="card"> <img src="${projects[i]["image"]}"
-    <div class="textarea"> ${projects[i]["title"]}
-    <div class="text" ${projects[i]["desc"]}></div>
+    <div class="text"> ${projects[i]["title"]}
+    <div class="text"> ${projects[i]["description"]}
     `;
     projectElement.innerHTML += individualElement;
    }
@@ -36,7 +36,7 @@ function saveNewProject() {
  
   let newObject = {
     "title": newTitle,
-    "desc": newDescription,
+    "description": newDescription,
     "image": newImage
 
   }
